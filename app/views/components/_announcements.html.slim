@@ -1,0 +1,35 @@
+section.announcements.py-5 style="background-color: #f5f1ed;"
+  .container
+    .row.mb-5.text-center
+      .col-12
+        h2.fw-bold.mb-2 style="color: #1a3a52; font-size: 2rem;"
+          | Parish Announcements
+        p style="color: #666;"
+          | Use your gifts to serve and grow with our community.
+
+    .row.g-4
+      / Left: Large featured announcement
+      .col-12.col-lg-6
+        div style="width: 100%; height: 260px; background: linear-gradient(135deg, #2a2a2a 0%, #4a4a4a 100%); border-radius: 0.25rem;"
+        h5.fw-bold.mt-3.mb-2 style="color: #1a3a52;"
+          | Celebrating Holy Week in Our Parish
+        p.small.mb-3 style="color: #666;"
+          | Join us as we observe this sacred season with special liturgies, reflections, and community gatherings.
+        a.btn.btn-sm href="#" style="background-color: white; border: 1px solid #ccc; color: #1a3a52; padding: 0.4rem 1.25rem;"
+          | Learn More
+
+      / Right: 3 stacked small announcements
+      .col-12.col-lg-6
+        - [["New Parish Office Hours Announced"], ["Youth Ministry Hosts Weekend Gathering"], ["Serving Together: Outreach Program Recap"]].each do |title|
+          .d-flex.gap-3.mb-4
+            div style="width: 90px; height: 90px; flex-shrink: 0; background: linear-gradient(135deg, #6b4423 0%, #2a2a2a 100%); border-radius: 0.25rem;"
+            div
+              h6.fw-bold.mb-2 style="color: #1a3a52;"
+                = title
+              a.small.text-decoration-none href="#" style="color: #8b8960;"
+                | Learn More →
+
+    .row.mt-3
+      .col-12.text-center
+        a.btn.text-white href="#" style="background-color: #8b8960; border: none; padding: 0.6rem 1.75rem; border-radius: 0.2rem;"
+          | See All Announcements

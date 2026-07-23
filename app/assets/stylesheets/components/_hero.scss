@@ -1,0 +1,31 @@
+// Hero Section - Bootstrap Grid Focus
+.hero-section {
+  overflow: hidden;
+
+  // Only override what Bootstrap doesn't provide
+  p.text-uppercase {
+    letter-spacing: 0.1em;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+
+  .btn {
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #6b6945 !important;
+      color: white !important;
+    }
+  }
+}
+
+// Responsive breakpoints (showing grid system usage)
+@media (max-width: 768px) {
+  .hero-section {
+    .row {
+      min-height: auto !important;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+section.about-section.py-5 style="background-color: #f5f1ed;"
+  .container
+    .row.align-items-start.g-5
+      
+      / Left: Image
+      .col-12.col-lg-5
+        div style="width: 100%; height: 400px; background: linear-gradient(135deg, #2a2a2a 0%, #4a4a4a 100%); border-radius: 0.25rem;"
+
+      / Right: Content
+      .col-12.col-lg-7
+        p.text-uppercase.fw-bold.small.mb-2 style="letter-spacing: 0.1em; color: #8b8960;"
+          | About
+        h2.fw-bold.mb-3 style="color: #1a3a52; font-size: 2rem;"
+          | Rooted in Faith. Growing Together.
+
+        p.mb-3 style="color: #555; line-height: 1.6;"
+          | [Church Name] Parish is a Christ-centered community dedicated to worship, sacrament, and spiritual growth.
+
+        .d-flex.gap-4.mb-4.small style="color: #333;"
+          span Street, Barangay, City
+          span (+63) 946 166 6435
+
+        / Accordion-style mission items
+        .border-top style="border-color: #ddd !important;"
+          - 3.times do
+            .d-flex.justify-content-between.align-items-center.py-3.border-bottom style="border-color: #ddd !important; cursor: pointer;"
+              span.fw-medium style="color: #1a3a52;"
+                | Our Mission
+              span style="color: #999;"
+                | ⌄
+
+        a.btn.text-white.mt-4 href="#" style="background-color: #8b8960; border: none; padding: 0.6rem 1.75rem; border-radius: 0.2rem;"
+          | About Our Church

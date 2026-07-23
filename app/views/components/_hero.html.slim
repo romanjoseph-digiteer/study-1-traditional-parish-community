@@ -1,0 +1,49 @@
+/ Hero Section
+section.hero-section
+  .container-fluid.p-0
+    .row.g-0 style="min-height: 100vh;"
+
+      / Left Column: Content
+      / Left Column: Content
+      .col-lg-6.px-5.d-flex.flex-column.justify-content-center.bg-light
+        nav.navbar.navbar-expand-lg style="background-color: transparent; padding-top: 1rem; padding-bottom: 1rem;"
+          .container-fluid.px-0
+            a.navbar-brand.d-flex.align-items-center href="/"
+              = image_tag "logo.webp", alt: "Church Logo", width: "36"
+              span.ms-2.fw-bold Church Logo
+
+            button.navbar-toggler type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              span.navbar-toggler-icon
+
+            #navbarNav.collapse.navbar-collapse
+              ul.navbar-nav.ms-auto.gap-4
+                li.nav-item
+                  a.nav-link href="#about" About
+                li.nav-item
+                  a.nav-link href="#schedule" Mass Schedule
+                li.nav-item
+                  a.nav-link href="#ministries" Ministries
+                li.nav-item
+                  a.nav-link href="#events" Events
+                li.nav-item
+                  a.nav-link href="#news" News
+                li.nav-item
+                  a.nav-link href="#contact" Contact
+
+        p.text-muted.text-uppercase.fw-bold.fs-6.mb-3 style="letter-spacing: 0.15em;"
+          | Parish Name
+
+        h1.fw-bold.mb-3 style="color: #1a3a52; font-size: 2.5rem; line-height: 1.15;"
+          | Welcome Home to Our Parish Community
+
+        p.mb-4 style="color: #555; font-size: 1rem; line-height: 1.6;"
+          | A place of faith, community, and service — journey with us in Christ.
+
+        div
+          a.btn.text-white href="#schedule" style="background-color: #8b8960; border: none; padding: 0.6rem 1.5rem;"
+            | View Mass Schedule
+
+      / Right Column: Image
+      .col-lg-6.p-0.overflow-hidden
+        div style="width: 100%; height: 100vh; background: linear-gradient(135deg, #d4af8f 0%, #f4e4c1 30%, #c9a961 70%, #a68560 100%); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5);"
+          | [Hero Background Image]

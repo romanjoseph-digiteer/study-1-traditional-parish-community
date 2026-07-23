@@ -1,0 +1,34 @@
+section.gatherings.py-5 style="background-color: #1a3a52;"
+  .container
+    .row.mb-4
+      .col-12.text-center
+        p.text-uppercase.fw-bold.small.mb-2 style="letter-spacing: 0.1em; color: #b8a584;"
+          | Events
+        h2.fw-bold.text-white.mb-2 style="font-size: 2rem;"
+          | Upcoming Gatherings
+        p.text-light style="opacity: 0.8;"
+          | Join us in worship, fellowship, and learning throughout the week.
+
+    / Tabs
+    ul.nav.nav-tabs.border-0.justify-content-center.mb-4
+      - 4.times do |i|
+        li.nav-item
+          a.nav-link class=(i == 0 ? "active fw-bold" : "text-light") href="#" style=(i == 0 ? "background: #2a4a62; color: white; border: none;" : "border: none; opacity: 0.6;")
+            = "Date 0#{i + 1}"
+
+    / 2x2 Event Cards
+    .row.g-3
+      - 4.times do |i|
+        .col-12.col-md-6
+          .card.border-0.flex-row.overflow-hidden style="background-color: #f5f1ed; border-radius: 0.25rem;"
+            div style="width: 110px; flex-shrink: 0; background: linear-gradient(135deg, #6b4423 0%, #2a2a2a 100%);"
+            .card-body.py-3
+              h6.fw-bold.mb-1 style="color: #1a3a52;"
+                | Parish Fiesta Celebration
+              p.small.mb-0 style="color: #777;"
+                | SUN, OCT 22 • 5PM
+
+    .row.mt-4
+      .col-12.text-center
+        a.btn.text-white href="#" style="background-color: #8b8960; border: none; padding: 0.6rem 1.75rem; border-radius: 0.2rem;"
+          | See All Events
