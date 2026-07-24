@@ -1,48 +1,56 @@
-/ Hero Section
-section.hero-section
-  .container-fluid.p-0
-    .row.g-0 style="min-height: 100vh;"
+section.hero.min-vh-100
+  .container-fluid
+    .row.align-items-center.min-vh-100
+      .col-lg-8.ps-lg-5.py-5
+        .row
+          .col-12
+            nav.navbar.navbar-expand-lg.p-0
+              .container-fluid.p-0.d-flex.align-items-center
+                a.navbar-brand.d-flex.align-items-center href="/"
+                  = image_tag "logo.webp", alt: "Church Logo", width: "36", height: "36"
+                  span.ms-2.hero__brand-text Church Logo
 
-      / Left Column: Content
-      .col-lg-6.px-5.d-flex.flex-column.justify-content-center.bg-light
-        nav.navbar.navbar-expand-lg style="background-color: transparent; padding-top: 1rem; padding-bottom: 1rem;"
-          .container-fluid.px-0
-            a.navbar-brand.d-flex.align-items-center href="/"
-              = image_tag "logo.webp", alt: "Church Logo", width: "36"
-              span.ms-2.fw-bold Church Logo
+                ul.nav.ms-auto.d-none.d-lg-flex
+                  li.nav-item
+                    a.nav-link href="#about" About
+                  li.nav-item
+                    a.nav-link href="#schedule" Mass Schedule
+                  li.nav-item
+                    a.nav-link href="#ministries" Ministries
+                  li.nav-item
+                    a.nav-link href="#events" Events
+                  li.nav-item
+                    a.nav-link href="#news" News
+                  li.nav-item
+                    a.nav-link href="#contact" Contact
 
-            button.navbar-toggler type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              span.navbar-toggler-icon
+              / button.navbar-toggler.type-button.d-lg-none type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavHero" aria-controls="navbarNavHero" aria-expanded="false" aria-label="Toggle navigation"
+              /   span.navbar-toggler-icon
 
-            #navbarNav.collapse.navbar-collapse
-              ul.navbar-nav.ms-auto.gap-4
-                li.nav-item
-                  a.nav-link href="#about" About
-                li.nav-item
-                  a.nav-link href="#schedule" Mass Schedule
-                li.nav-item
-                  a.nav-link href="#ministries" Ministries
-                li.nav-item
-                  a.nav-link href="#events" Events
-                li.nav-item
-                  a.nav-link href="#news" News
-                li.nav-item
-                  a.nav-link href="#contact" Contact
+              / #navbarNavHero.collapse.navbar-collapse.d-lg-none
+              /   ul.nav.flex-column
+              /     li.nav-item
+              /       a.nav-link href="#about" About
+              /     li.nav-item
+              /       a.nav-link href="#schedule" Mass Schedule
+              /     li.nav-item
+              /       a.nav-link href="#ministries" Ministries
+              /     li.nav-item
+              /       a.nav-link href="#events" Events
+              /     li.nav-item
+              /       a.nav-link href="#news" News
+              /     li.nav-item
+              /       a.nav-link href="#contact" Contact
 
-        p.text-muted.text-uppercase.fw-bold.fs-6.mb-3 style="letter-spacing: 0.15em;"
-          | Parish Name
+          .col-12
+            .hero__body.py-5
+              .row
+                .col-12.col-lg-10
+                  p.hero__eyebrow Parish Name
+                  h1.hero__title Welcome Home to Our Parish Community
+                  p.hero__subtitle A place of faith, community, and service — journey with us in Christ.
+                  a.btn.btn-primary.hero__cta.mt-3 href="#schedule" View Mass Schedule
 
-        h1.fw-bold.mb-3 style="color: #1a3a52; font-size: 2.5rem; line-height: 1.15;"
-          | Welcome Home to Our Parish Community
-
-        p.mb-4 style="color: #555; font-size: 1rem; line-height: 1.6;"
-          | A place of faith, community, and service — journey with us in Christ.
-
-        div
-          a.btn.text-white href="#schedule" style="background-color: #8b8960; border: none; padding: 0.6rem 1.5rem;"
-            | View Mass Schedule
-
-      / Right Column: Image
-      .col-lg-6.p-0.overflow-hidden
-        div style="width: 100%; height: 100vh; background: linear-gradient(135deg, #d4af8f 0%, #f4e4c1 30%, #c9a961 70%, #a68560 100%); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5);"
-          | [Hero Background Image]
+      .col-lg-4.d-none.d-lg-block.p-0
+        .hero__right.h-100
+          = image_tag "hero-bg.webp", alt: "Heavens background for hero", class: "w-100 h-100 object-fit-cover", loading: "eager", decoding: "async"

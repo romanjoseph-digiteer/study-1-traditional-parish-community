@@ -1,31 +1,42 @@
-// Hero Section - Bootstrap Grid Focus
-.hero-section {
-  overflow: hidden;
+.hero {
+  background: #f7efe9;
 
-  // Only override what Bootstrap doesn't provide
-  p.text-uppercase {
-    letter-spacing: 0.1em;
-  }
+  .hero__right {
+    height: 100%;
+    overflow: hidden;
 
-  h1 {
-    line-height: 1.2;
-  }
-
-  .btn {
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: #6b6945 !important;
-      color: white !important;
+    img, .object-fit-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
   }
-}
 
-// Responsive breakpoints (showing grid system usage)
-@media (max-width: 768px) {
-  .hero-section {
-    .row {
-      min-height: auto !important;
-    }
+  .hero__body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .hero__eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    color: #7a6d62;
+    font-size: .85rem;
+    margin-bottom: .75rem;
+  }
+
+  .hero__title {
+    color: #123645;
+    font-weight: 700;
+    line-height: 1.03;
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+  }
+
+  .hero__subtitle {
+    color: #333;
+    margin-bottom: 1.5rem;
+    max-width: 60ch;
   }
 }
