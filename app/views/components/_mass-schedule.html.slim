@@ -1,31 +1,28 @@
-/ section.mass-schedule.py-4 style="background-color: #1a3a52;"
-/   .container-fluid.px-5
-/     .row.align-items-center
-      
-/       / Left: Title block
-/       .col-12.col-lg-4.mb-3.mb-lg-0
-/         h3.fw-bold.text-white.mb-1 style="font-size: 1.4rem;"
-/           | Sunday Mass Schedule
-/         p.text-light.mb-2.small style="opacity: 0.8;"
-/           | Journey with us in Christ.
-/         a.text-decoration-none.small href="#" style="color: #b8a584;"
-/           | View Full Schedule →
+section#schedule.mass-schedule.py-4 aria-labelledby="schedule-title"
+  .container-fluid.px-5
+    .row.align-items-center
+      .col-12.col-lg-4.mb-3.mb-lg-0
+        h2#schedule-title.mass-schedule__title.fw-bold.text-white.mb-1
+          | Sunday Mass Schedule
+        p.mass-schedule__subtitle.text-light.mb-2.small
+          | Journey with us in Christ.
+        a.mass-schedule__link.text-decoration-none.small href="#"
+          | View Full Schedule →
 
-/       / Right: 3-column time slots
-/       .col-12.col-lg-8
-/         .row.text-white
-/           .col-4.text-center.border-start.ps-3 style="border-color: rgba(255,255,255,0.2) !important;"
-/             p.small.fw-bold.mb-1 style="color: #b8a584; letter-spacing: 0.1em;"
-/               | MORNING
-/             p.mb-0 style="font-size: 1rem;"
-/               | 7:00 – 8:00 AM
-/           .col-4.text-center.border-start.ps-3 style="border-color: rgba(255,255,255,0.2) !important;"
-/             p.small.fw-bold.mb-1 style="color: #b8a584; letter-spacing: 0.1em;"
-/               | AFTERNOON
-/             p.mb-0 style="font-size: 1rem;"
-/               | 12:00 – 1:00 PM
-/           .col-4.text-center.border-start.ps-3 style="border-color: rgba(255,255,255,0.2) !important;"
-/             p.small.fw-bold.mb-1 style="color: #b8a584; letter-spacing: 0.1em;"
-/               | EVENING
-/             p.mb-0 style="font-size: 1rem;"
-/               | 12:00 – 1:00 PM
+      .col-12.col-lg-8
+        .row.text-white
+          .col-4.text-center.border-start.ps-3.mass-schedule__slot
+            p.small.fw-bold.mb-1.mass-schedule__label
+              | MORNING
+            p.mb-0.mass-schedule__time
+              | 7:00 – 8:00 AM
+          .col-4.text-center.border-start.ps-3.mass-schedule__slot
+            p.small.fw-bold.mb-1.mass-schedule__label
+              | AFTERNOON
+            p.mb-0.mass-schedule__time
+              | 5:00 – 6:00 PM
+          .col-4.text-center.border-start.ps-3.mass-schedule__slot
+            p.small.fw-bold.mb-1.mass-schedule__label
+              | EVENING
+            p.mb-0.mass-schedule__time
+              | 6:00 – 7:00 PM
