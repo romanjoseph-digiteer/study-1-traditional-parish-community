@@ -1,0 +1,98 @@
+.about-section {
+  background-color: #f5f1ed;
+  padding: 4rem 0;
+
+  &__image {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #2a2a2a 0%, #4a4a4a 100%);
+    border-radius: 0.25rem;
+    box-shadow: 0 16px 40px rgba(26, 58, 82, 0.12);
+  }
+
+  &__eyebrow {
+    color: #8b8960;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: #1a3a52;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  &__contact {
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__accordion {
+    border-top: 1px solid #ddd;
+  }
+
+  &__item {
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  &__item-title {
+    color: #1a3a52;
+    font-weight: 600;
+  }
+
+  &__item-toggle {
+    color: #999;
+    font-size: 1.1rem;
+  }
+
+  &__cta {
+    background-color: #8b8960;
+    border: 0;
+    border-radius: 0.2rem;
+    color: #fff;
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.75rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  &__cta:hover,
+  &__cta:focus {
+    background-color: #6f6a45;
+    color: #fff;
+  }
+
+  @media (max-width: 991.98px) {
+    padding: 3rem 0;
+
+    &__image {
+      height: 300px;
+      margin-bottom: 1.5rem;
+    }
+
+    &__title {
+      font-size: 1.75rem;
+    }
+  }
+}
