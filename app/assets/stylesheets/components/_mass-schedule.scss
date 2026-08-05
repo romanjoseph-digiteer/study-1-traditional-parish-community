@@ -1,43 +1,46 @@
 .mass-schedule {
   background-color: #1a3a52;
-  padding: 3rem 0;
-  padding-top: 0;
-  padding-bottom: 10.5rem;
+  padding: 3rem 0 10.5rem 0;
+}
 
-  .mass-schedule__title {
-    color: #fff;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 70rem;
-    line-height: 1.1;
-    margin-bottom: 0.75rem;
-  }
+.mass-schedule__title {
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
 
-  .mass-schedule__subtitle {
-    color: rgba(255, 255, 255, 0.75);
-    margin-bottom: 1rem;
-  }
+.mass-schedule__subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1rem;
+}
 
-  .mass-schedule__link {
-    color: #b8a584;
-    font-weight: 500;
-  }
+.mass-schedule__link {
+  color: #b8a584;
+  font-weight: 500;
+}
 
-  .mass-schedule__slot {
-    border-color: rgba(255, 255, 255, 0.18);
-    min-height: 100%;
-    padding: 0 1.5rem;
-  }
+.mass-schedule__slot {
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0 1.5rem;
+  text-align: center;
 
-  .mass-schedule__label {
-    color: #b8a584;
-    letter-spacing: 0.18em;
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
+  &:first-child {
+    border-left: none;
   }
+}
 
-  .mass-schedule__time {
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
+.mass-schedule__label {
+  color: #b8a584;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.mass-schedule__time {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
 }
