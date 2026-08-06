@@ -3,3 +3,21 @@
 @import 'components/hero';
 @import 'components/mass-schedule';
 @import 'components/about';
+
+:root {
+  --bs-font-sans-serif: "Instrument Sans", sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --font-heading: "Libre Caslon Text", serif;
+  --font-body: "Instrument Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+  .hero__title,
+  .mass-schedule__title,
+  .about-section__title {
+  font-family: var(--font-heading);
+}
