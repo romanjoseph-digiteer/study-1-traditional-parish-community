@@ -1,18 +1,15 @@
-section.about-section
+section.about-section.px-5 
   .container
     .row.align-items-start.g-5
-      
-      / Left: Image
       .col-12.col-lg-6
         = image_tag "about-image.webp", alt: "About image", class: "about-section__image", loading: "lazy"
-
-      / Right: Content
       .col-12.col-lg-6
         p.about-section__eyebrow
           | About
         
         h2.about-section__title
-          | Rooted in Faith. Growing Together.
+          | Rooted in Faith. 
+          | Growing Together.
 
         p.about-section__text
           | [Church Name] Parish is a Christ-centered community dedicated to worship, sacrament, and spiritual growth.
@@ -21,14 +18,13 @@ section.about-section
           span Street, Barangay, City
           span +63 946 166 6435
 
-        / Accordion-style mission items
         .about-section__accordion
           - 3.times do
             .about-section__item
               span.about-section__item-title
                 | Our Mission
               span.about-section__item-toggle
-                | ⌄
+                i.bi.bi-chevron-down aria-hidden="true"
 
         a.about-section__cta href="#schedule"
           | About Our Church

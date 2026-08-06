@@ -11,32 +11,33 @@
 
   &__eyebrow {
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     margin-bottom: 0.75rem;
-    letter-spacing: 0.1em;
-    color: #8b8960;
+    letter-spacing: 0.2rem;
+    color: #000;
   }
 
   &__title {
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #1a3a52;
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   &__text {
     margin-bottom: 1rem;
     color: #555;
-    line-height: 1.6;
+    line-height: 100%;
+    font-size: 1.3rem;
+    font-family: var(--font-body);
   }
 
   &__contact {
     display: flex;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
-    font-size: 0.95rem;
-    color: #333;
+    font-size: 1.3rem;
+    color: #555;
   }
 
   &__accordion {
@@ -53,8 +54,10 @@
   }
 
   &__item-title {
-    font-weight: 600;
+    font-weight: 300;
+    font-family: var(--font-body);
     color: #1a3a52;
+    font-size: 1.3rem;
   }
 
   &__item-toggle {
@@ -62,14 +65,15 @@
   }
 
   &__cta {
-    background-color: #8b8960;
+    font-weight: 500;
+    background-color: #8C7A54;
     border: none;
-    padding: 0.6rem 1.75rem;
-    border-radius: 0.2rem;
+    padding: 1rem 1.75rem;
+    border-radius: 0.25rem;
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 3rem;
     transition: background-color 0.2s ease-in-out;
 
     &:hover,
@@ -78,4 +82,9 @@
       color: #fff;
     }
   }
+
+  .about-section__item-toggle i {
+  font-size: 1rem;
+  color: #999;
+}
 }
