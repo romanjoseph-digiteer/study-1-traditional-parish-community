@@ -5,8 +5,7 @@
 
 .mass-schedule__title {
   color: #fff;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 3.5rem;
+  font-size: 2rem;
   line-height: 1.1;
   margin-bottom: 0.75rem;
 }
@@ -32,15 +31,15 @@
 }
 
 .mass-schedule__label {
-  color: #b8a584;
   letter-spacing: 0.08em;
   font-size: 0.85rem;
-  margin-bottom: 0.5rem;
+  font-weight: 100;
 }
 
 .mass-schedule__time {
-  color: #fff;
+  color: #ACB3B9;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 300;
   margin: 0;
+  font-family: var(--font-body);
 }
